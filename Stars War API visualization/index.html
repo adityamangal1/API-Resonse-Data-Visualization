@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stars War API visualization</title>
+</head>
+
+<body>
+
+    <section>
+        <h1>Star Wars Canon Universe</h1>
+        <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <th>Name</th>
+                    <th>Birth Year</th>
+                    <th>Gender</th>
+                </tr>
+            </table>
+        </div>
+        <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    {{#each response.results}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{birth_year}}</td>
+                        <td>{{gender}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+
+            <div class="made-with-love">
+                Made with
+                <i>♥</i> by
+                <a target="_blank" href="https://github.com/adityamangal1/Postman-Visualization-with-APIs">Aditya Mangal</a>
+            </div>
+
+            <script>
+                $(window)
+                    .on("load resize ", function () {
+                        var scrollWidth =
+                            $(".tbl-content").width() - $(".tbl-content table").width();
+                        $(".tbl-header").css({ "padding-right": scrollWidth });
+                    })
+                    .resize();
+            </script>
+        </div>
+    </section>
+
+</body>
+
+</html>
