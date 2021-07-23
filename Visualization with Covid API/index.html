@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization with Covid API</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section>
+        <h1 class="title">Visualization with Covid API</h1>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Cases</th>
+                    <th>Deaths</th>
+                    <th>TotalTests</th>
+                    <th>Recovered</th>
+                    <th>Active</th>
+                    <th>Helpline</th>
+                    <th>For More info</th>
+                    <th>Helpline</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each response}}
+                <tr class="active-row">
+                    <td>{{country}}</td>
+                    <td>{{cases}}</td>
+                    <td>{{deaths}}</td>
+                    <td>{{totalTests}}</td>
+                    <td>{{recovered}}</td>
+                    <td>{{active}}</td>
+                    <td>{{active}}</td>
+                    <td>https://www.cowin.gov.in</td>
+                    <td><button onclick="pageRedirect()" class="btn">Click here</button></td>
+                </tr>
+
+                {{/each}}
+
+            </tbody>
+        </table>
+        <script src="script.js"></script>
+</body>
+
+</html>

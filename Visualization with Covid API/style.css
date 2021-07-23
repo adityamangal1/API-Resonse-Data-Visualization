@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&display=swap");
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+.styled-table {
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.btn {
+  display: block;
+  margin: 3px auto;
+  padding: 6px 18px;
+  border: 2px solid black;
+  background: aquamarine;
+  font-family: "Baloo Tamma 2", cursive;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  text-decoration: none;
+}
+.active-row {
+  font-family: "Baloo Tamma 2", cursive;
+}
+.btn:hover {
+  background: rgb(0, 248, 207);
+}
+
+.title {
+  color: blueviolet;
+  text-transform: none;
+  font-size: 40px;
+  text-shadow: 1px 4px pink;
+  font-family: "Baloo Tamma 2", cursive;
+  animation: color-change 2s linear infinite;
+  // text-align: center;
+}
+
+@keyframes color-change {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #f50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
