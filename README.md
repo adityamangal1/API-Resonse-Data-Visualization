@@ -1,4 +1,4 @@
-# API Resons Data Visualization
+# API Respons Data Visualization
 
 Visualization code added to the Tests for a request will render in the Visualize tab for the response body, alongside the Pretty, Raw, and Preview options. Postman provides a programmable way to visually represent your request responses. API consumers can get more from API data by taking advantage of prebuilt charts and graphs. Data itself can seem very bland. It can be difficult to really capture the impact a set of data has just by looking at straight numbers. But when you introduce a visual concept to present your data, thoughts click, your mind gets creative, and you see insights that you would’ve never seen just by looking at plain numbers. Postman Visualizer is your API visualization companion
 
